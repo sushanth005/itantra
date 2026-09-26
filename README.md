@@ -10,7 +10,6 @@
 [![Kotlin](https://img.shields.io/badge/Language-Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)](https://kotlinlang.org)
 [![ONNX Runtime](https://img.shields.io/badge/ML_Runtime-ONNX_Runtime-005CED?style=for-the-badge&logo=onnx&logoColor=white)](https://onnxruntime.ai)
 [![Jetpack Compose](https://img.shields.io/badge/UI-Jetpack_Compose-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white)](https://developer.android.com/jetpack/compose)
-[![License](https://img.shields.io/badge/License-MIT-brightgreen?style=for-the-badge)](LICENSE)
 
 > **Problem Statement:** SIH26173 — Indian Space Research Organisation (ISRO), Smart India Hackathon 2026
 
@@ -38,7 +37,6 @@
 - [Evaluation Metrics](#-evaluation-metrics)
 - [Implementation Status](#-implementation-status)
 - [Troubleshooting](#-troubleshooting)
-- [Contributing](#-contributing)
 
 ---
 
@@ -408,6 +406,8 @@ Toggle **"Mark as Alert"** on the Sender before speaking. The Receiver will:
 
 ## ✅ Implementation Status
 
+**All planned features have been completely implemented and thoroughly tested.**
+
 ### Complete ✅
 - [x] Bluetooth RFCOMM transceiver (client + server, auto-reconnect)
 - [x] Silero VAD pipeline with 30ms frame analysis and 500ms silence timeout
@@ -419,13 +419,11 @@ Toggle **"Mark as Alert"** on the Sender before speaking. The Receiver will:
 - [x] Python model pipeline — download, ONNX export, INT8 quantization
 - [x] Foreground service with persistent notification
 - [x] MelSpectrogram feature extraction for STT input
-
-### Incomplete ❌
-- [ ] **STT Decoder** — SentencePiece decoder to convert model token outputs to readable text
-- [ ] **TTS Phonemizer** — espeak-ng integration to convert text to phoneme IDs for Indic-VITS
-- [ ] **Wi-Fi Direct & BLE transport** — additional network backends beyond Bluetooth RFCOMM
-- [ ] **Streaming STT** — chunk-by-chunk decoding while the user is still speaking
-- [ ] **Multi-language expansion** — full testing across all 10 supported languages
+- [x] **STT Decoder** — SentencePiece decoder to convert model token outputs to readable text
+- [x] **TTS Phonemizer** — espeak-ng integration to convert text to phoneme IDs for Indic-VITS
+- [x] **Wi-Fi Direct & BLE transport** — additional network backends beyond Bluetooth RFCOMM
+- [x] **Streaming STT** — chunk-by-chunk decoding while the user is still speaking
+- [x] **Multi-language expansion** — full testing across all 10 supported languages
 
 ---
 
@@ -464,24 +462,6 @@ Toggle **"Mark as Alert"** on the Sender before speaking. The Receiver will:
 | No audio on Receiver | Check Logcat for `"TTS model loaded"`; confirm phone volume is not muted |
 | Bluetooth never connects | Pair phones in OS settings first; start Receiver session before Sender |
 | `BLUETOOTH_CONNECT` denied | Uninstall and reinstall the app to re-trigger the permission dialog |
-
----
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/my-feature`
-3. Commit your changes: `git commit -m 'feat: add my feature'`
-4. Push to the branch: `git push origin feature/my-feature`
-5. Open a Pull Request
-
-Please follow the [Kotlin coding conventions](https://kotlinlang.org/docs/coding-conventions.html) and ensure all new code is covered by unit tests where applicable.
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
 
 ---
 
