@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">iTantra</string>
+    <string name="app_description">Indian Multilingual TTS &amp; STT Aided Neural Transceiver</string>
+    <string name="role_sender">Sender (STT)</string>
+    <string name="role_receiver">Receiver (TTS)</string>
+    <string name="mode_ptt">Push to Talk</string>
+    <string name="mode_phone">Phone Mode</string>
+    <string name="start_session">Start Session</string>
+    <string name="end_session">End Session</string>
+    <string name="hold_to_talk">Hold to Talk</string>
+    <string name="listening">Listening…</string>
+    <string name="channel_name">iTantra Transceiver</string>
+    <string name="channel_desc">Active voice transceiver session</string>
+    <string name="permission_mic">Microphone — required for speech capture</string>
+    <string name="permission_bt">Bluetooth — required for device pairing</string>
+    <string name="permission_location">Location — required by Android for Bluetooth scanning</string>
+    <string name="alert_label">Mark as Alert</string>
+    <string name="diagnostics_title">Live Diagnostics</string>
+    <string name="no_device_selected">No device selected</string>
+    <string name="select_device">Select Device</string>
+    <string name="fully_offline">All processing is fully offline. No data leaves your device.</string>
+</resources>

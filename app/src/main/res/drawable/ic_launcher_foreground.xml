@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Vertical bar — the "i" stem -->
+    <path
+        android:strokeColor="#FF00D4FF"
+        android:strokeWidth="6"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M54,28 L54,84"/>
+
+    <!-- Dot above the "i" — drawn as path arc (no <circle> in VectorDrawable) -->
+    <path
+        android:fillColor="#FF00D4FF"
+        android:pathData="M54,12 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0"/>
+
+    <!-- Inner sound waves -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FF00D4FF"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:pathData="M38,38 Q30,54 38,70"/>
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FF00D4FF"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:pathData="M70,38 Q78,54 70,70"/>
+
+    <!-- Outer sound waves -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FF7B2FFF"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M28,28 Q14,54 28,80"/>
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FF7B2FFF"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M80,28 Q94,54 80,80"/>
+
+</vector>

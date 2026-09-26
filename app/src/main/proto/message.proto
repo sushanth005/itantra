@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+option java_package = "com.itantra.proto";
+option java_outer_classname = "TransceiverProto";
+option java_multiple_files = true;
+
+package com.itantra;
+
+// The payload sent over Bluetooth / Wi-Fi Direct.
+// Serialized size is typically under 50 bytes for a short utterance.
+message TransceiverMessage {
+  // Transcribed text from the STT engine
+  string text = 1;
+
+  // BCP-47 language code (e.g. "hi" = Hindi, "gu" = Gujarati)
+  string lang_code = 2;
+
+  // When true, receiver forces max volume and overrides DND
+  bool is_alert = 3;
+
+  // Sender epoch milliseconds — used to calculate end-to-end latency
+  uint64 sender_timestamp_ms = 4;
+
+  // Sequence number for packet ordering / loss detection
+  uint32 sequence = 5;
+}
